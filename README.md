@@ -1,2 +1,2 @@
-# javascripter
-My homepage
+# My website
+Currently being updated.
