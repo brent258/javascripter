@@ -1,2 +1,5 @@
 runtime: nodejs
 env: flex
+env_variables:
+  SENDGRID_KEY: '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'
+  SENDGRID_EMAIL: 'brentmccoy@me.com'

@@ -1,29 +1,39 @@
 {
-  "name": "bs4-homepage",
+  "name": "javascripter",
   "version": "1.0.0",
-  "description": "A starter template for Bootstrap 4 homepage layouts.",
-  "main": "index.js",
+  "description": "Personal website of Brent McCoy",
+  "main": "server.js",
+  "engines": {
+    "node": ">=4.3.2"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gcloud app deploy",
+    "start": "node server.js",
+    "lint": "samples lint",
+    "pretest": "npm run lint",
+    "system-test": "samples test app",
+    "test": "npm run system-test",
+    "e2e-test": "samples test deploy"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brent258/bs4-homepage.git"
+    "url": "git+https://github.com/brent258/javascripter.git"
   },
   "keywords": [
-    "bootstrap",
-    "4",
-    "homepage"
+    "javascript",
+    "node js"
   ],
   "author": "Brent McCoy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/brent258/bs4-homepage/issues"
+    "url": "https://github.com/brent258/javascripter/issues"
   },
-  "homepage": "https://github.com/brent258/bs4-homepage#readme",
+  "homepage": "https://github.com/brent258/javascripter#readme",
   "dependencies": {
-    "bootstrap": "^4.0.0-beta",
+    "@sendgrid/mail": "^6.1.4",
+    "body-parser": "^1.18.2",
     "ejs": "^2.5.7",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "sendgrid": "^5.2.3"
   }
 }
