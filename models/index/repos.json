@@ -1,7 +1,7 @@
 [
   {
     "name": "bs4-homepage",
-    "tags": "HTML",
+    "tags": "HTML,CSS",
     "date": "20/10/2017",
     "description": "A starter template for prototyping Bootstrap 4 homepage layouts. Add, remove, edit or mix and match components as needed.",
     "link": "https://github.com/brent258/bs4-homepage"

@@ -7,8 +7,6 @@ const PORT = process.env.PORT || 8080;
 const SENDGRID_KEY = process.env.SENDGRID_KEY;
 const SENDGRID_EMAIL = process.env.SENDGRID_EMAIL;
 
-const repos = require('./models/index/repos.json');
-
 app.set('views','./views');
 app.set('view engine','ejs');
 app.use(express.static('./public'));
@@ -17,6 +15,7 @@ app.use(bodyParser.urlencoded({extended:false}));
 
 app.route('/')
   .get((req,res,next) => {
+    let repos = require('./models/index/repos.json');
     res.render('index', {repos: repos});
   })
   .post((req,res,next) => {
